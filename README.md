@@ -1,9 +1,9 @@
 # GAMON SIMPLE AI BOT DISCORD.JS
 - code by: gilga
 - using API [GEMINI-AI](https://aistudio.google.com/app/apikey)
-```sh
 
 ### npm list modules
+```sh
 usr@gilga:~/gamon-ai$ npm list 
 gamon-ai@1.0.0 /gamon-ai
 ├── @discordjs/rest@0.4.1
