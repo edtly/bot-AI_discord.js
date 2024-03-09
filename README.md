@@ -1,7 +1,9 @@
-### GAMON SIMPLE AI BOT DISCORD.JS
-code by: gilga
-using API gemini ai [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
-npm list 
+# GAMON SIMPLE AI BOT DISCORD.JS
+- code by: gilga
+- using API [GEMINI-AI](https://aistudio.google.com/app/apikey)
+```sh
+usr@gilga:~/gamon-ai$ npm list 
+gamon-ai@1.0.0 /gamon-ai
 ├── @discordjs/rest@0.4.1
 ├── @google-ai/generativelanguage@2.1.0
 ├── @google/generative-ai@0.2.1
@@ -14,8 +16,8 @@ npm list
 ├── google-auth-library@9.6.3
 ├── ms@2.1.3
 └── node@16.14.0
-
-### Installation
+```
+## Installation
 
 * change
 ```sh
@@ -25,7 +27,7 @@ to
 ```sh
 .env
 ```
-# contents of the .env file
+### contents of the .env file
 * GET TOKEN [DEVELOVER PORTAL](https://discord.com/developers)
 ```sh
 TOKEN=
@@ -42,12 +44,12 @@ CLIENT_ID=
 ```sh
 GEMINI_API=
 ```
-# INSTALL & RUN
+## INSTALL & RUN
 * npm
   ```sh
   npm i
   ```
-  # or
+  or
   ```sh
   npm install
   ```
