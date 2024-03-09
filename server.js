@@ -1,3 +1,15 @@
+var express = require('express');
+var app = express();
+var path = require('path');
+var view = __dirname + "/views/";
+var public = __dirname + "/public/";
+
+app.get('/', function(req, res) {
+    res.sendFile(path.join(view + "home.html"));
+});
+app.use('/', express.static(public));
+app.listen(8080);
+
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const client = new Client({
