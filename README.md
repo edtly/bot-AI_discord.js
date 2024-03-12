@@ -62,5 +62,5 @@ GEMINI_API=
   ```
   or
   ```sh
-  node server.js
+  node index.js
   ```
