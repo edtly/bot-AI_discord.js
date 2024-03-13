@@ -48,19 +48,19 @@ GEMINI_API=
 ```
 ## INSTALL & RUN
 * npm
-  ```sh
-  npm i
-  ```
-  or
-  ```sh
-  npm install
-  ```
+```sh
+npm i
+```
+or
+```sh
+npm install
+```
 
 * End
-  ```sh
-  node .
-  ```
-  or
-  ```sh
-  node index.js
-  ```
+```sh
+node .
+```
+or
+```sh
+node index.js
+```
