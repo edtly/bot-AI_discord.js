@@ -56,7 +56,7 @@ or
 npm install
 ```
 
-* End
+* starting
 ```sh
 node .
 ```
