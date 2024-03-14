@@ -17,9 +17,9 @@ module.exports = (client) => {
 												client.aliases.set(alias, command.name)
 										})
 								}
-								table.addRow(command.name, '✅')
+								table.addRow(command.name, '[ok]')
 						} else {
-								table.addRow(file, '⛔')
+								table.addRow(file, '[err]')
 						}
 				});
 	});

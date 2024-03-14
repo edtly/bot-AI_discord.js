@@ -24,7 +24,6 @@ const client = new Client({
 	], 
 	partials: [Partials.Channel, Partials.Message, Partials.User, Partials.GuildMember, Partials.Reaction]
 });
-
 const fs = require('fs');
 const config = require('./config.json');
 require('dotenv').config()
@@ -50,7 +49,8 @@ client.on("messageCreate", async (message) => {
 		.trim();
 	  console.log(`Pesan pengguna: ${userMessage}`);
 	  if (userMessage === userMessage) {
-		message.reply("> ### ↺ load message \n> " + userMessage)
+		let reply = await message.reply("### ↺ load message ```" + userMessage + "```" + "\nplease wait a moment")
+		setTimeout(() => reply.delete(),5000);
 	  }
 	  try {
 		// Attempt to generate response using Google Generative AI
@@ -92,7 +92,7 @@ client.on("messageCreate", async (message) => {
 		};
 	  } catch (error) {
 		console.error("Error generating response:", error); // Log the error
-		message.reply("bot error please report it to the developer\n[❒ EDTLY](https://discord.gg/uRDcjESqeB)"); // Inform user about the error
+		message.reply("⚠︎ there was no answer to that message\n⚠︎ bot error please report it to the developer\n### [❒ EDTLY](https://discord.gg/uRDcjESqeB)"); // Inform user about the error
 	  }
 	}
   });

@@ -4,9 +4,9 @@ const chalk = require('chalk')
 client.on("ready", () => {
 	const activities = [
 		{ name: `${client.guilds.cache.size} Servers`, type: 2 }, // LISTENING
-		{ name: `${client.channels.cache.size} Channels`, type: 0 }, // PLAYING
+		{ name: `${client.channels.cache.size} Channels`, type: 2 }, // PLAYING
 		{ name: `${client.users.cache.size} Users`, type: 3 }, // WATCHING
-		{ name: `USING GEMINI AI`, type: 0 } // COMPETING
+		{ name: `www.edtly.fund`, type: 0 } // COMPETING
 	];
 	const status = [
 		'online',

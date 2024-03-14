@@ -7,7 +7,7 @@ table.setHeading('Events', 'Stats').setBorder('|', '=', "0", "0")
 module.exports = (client) => {
     fs.readdirSync('./events/').filter((file) => file.endsWith('.js')).forEach((event) => {
       	require(`../events/${event}`);
-	table.addRow(event.split('.js')[0], '✅')
+	table.addRow(event.split('.js')[0], '[ok]')
     })
 	console.log(chalk.greenBright(table.toString()))
 };

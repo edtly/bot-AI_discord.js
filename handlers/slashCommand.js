@@ -32,9 +32,9 @@ module.exports = (client) => {
 			
 				if(slashCommand.name) {
 						client.slashCommands.set(slashCommand.name, slashCommand)
-						table.addRow(file.split('.js')[0], '✅')
+						table.addRow(file.split('.js')[0], '[ok]')
 				} else {
-						table.addRow(file.split('.js')[0], '⛔')
+						table.addRow(file.split('.js')[0], '[err]')
 				}
 		}
 		
